@@ -5,6 +5,7 @@ const path = require("path");
 const app = express();
 
 app.listen(3000);
+    console.log('servidor corriendo');
 //LOS MIDDLEWARE
 const staticFolder = path.resolve(__dirname, "./public");
 app.use(express.static(staticFolder));
