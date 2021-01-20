@@ -1,50 +1,173 @@
-header{
-    background-color: #EAC926;    
-}
-body{
-    background-color: white;
-    font-family: 'Roboto', sans-serif;
+:root {
+    --primary: #eac926;
+    --main-yellow: #eac926;
+    --dark-blue: #03264c;
+    --light-blue: #1259c3;
+    --dark-grey: #666;
+    --light-grey: #ebebeb;
+    --green: #39b54a;
+  }
+  
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    background-color: #ebebeb;
+  }
+  
+  h3 {
+    font-size: 24px;
+  }
+  
+  p {
     font-size: 12px;
-    
-}
-h1 {
-    font-size: 50px;
-    font-weight: 300;
-    font-weight: bolder;
-}
-
-h2 {
-    font-size: 20px;
-}
-
-p {
-    font-size: 17px;
-    line-height: 24px;
-}
-
-nav a{
-    text-decoration: none;
-    color: black;
-}
-nav ul{
+  }
+  
+  #page-header {
+    background-color: #eac926;
+    padding: 16px;
+  }
+  
+  #page-header .logo {
+    width: 50%;
+  }
+  
+  #page-header .logo {
+    padding: 10px;
+  }
+  
+  #main-nav {
+    font-size: 12px;
+  }
+  
+  .nav-list {
     list-style-type: none;
-}
-.burguer-menu {
-    background-color: blue;
-    font-size: 30px;
-    color: white;
+  }
+  
+  .nav-list a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .input {
+    background-color: #fff;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+  }
+  
+  .submit {
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+  }
+  
+  #page-header #top-header p {
+    width: 100%;
     text-align: center;
-
-}
-
-.negrita {
+    margin-top: 10px;
+  }
+  
+  #burger-menu {
+    text-align: center;
+  }
+  
+  #burger-menu i {
+    background-color: #0044aa;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+  }
+  
+  .product {
+    width: 100%;
+    background-color: #fff;
+  }
+  
+  .product .price {
+    font-size: 18px;
+  }
+  
+  .product .discount,
+  .product .description {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  h3,
+  .product .description {
+    color: #666;
+  }
+  
+  .description {
+    display: none;
+  }
+  
+  .banner img {
+    width: 100%;
+  }
+  
+  main {
+    margin: 0 auto;
+    width: 90%;
+  }
+  
+  .product img {
+    width: 100%;
+  }
+  
+  .truck-icon,
+  .discount {
+    color: #39b54a;
+  }
+  
+  .truck-icon {
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  
+  .product .main-article {
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+  }
+  
+  @media (min-width: 361px) {
+    .product .description {
+      display: initial;
+    }
+  
+    .product {
+      box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+  }
+  
+  @media (min-width: 769px) {
+  }
+  
+  
+  
+  .negrita {
     font-weight: bold;
 }
 footer {
     background-color: white;
     text-align: center;
+    line-height: 20px;
 }
-.iconos{
+.icons{
     font-size: 10em;
     color: blue;
     text-align: center;
@@ -66,4 +189,7 @@ footer {
 }
 .descuentos {
     font-size: 16px;
+}
+.compra-en-cuotas{
+text-align:center;
 }
